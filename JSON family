@@ -38,4 +38,4 @@
   ]
 }
 $..height
-$..trips[?(@.bus)]
+$..trips[?(@.transport=bus)]
