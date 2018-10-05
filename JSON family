@@ -5,7 +5,8 @@
 {"name":"Marie","birthdate":"1996-01-17","height":171,"weight":70}
 ],
 "trips":[
-{"city":"Paris","date":"2018-09-01",transport1":"train", transport2":"bus",transport3":"train"}
-{"city":"Lyon","date":"2018-08-08",transport1":"car", transport2":"train",transport3":"tram"}
+{"city":"Paris","date":"2018-09-01","transport":"train"}
+{"city":"Lyon","date":"2018-08-08","transport":"bus"}
+{"city":"Berlin","date":"2018-06-08","transport":"bus"}
 ]
 }
