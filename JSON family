@@ -10,3 +10,5 @@
 {"city":"Berlin","date":"2018-06-08","transport":"bus"}
 ]
 }
+$..height
+$..trips[?(@.bus)]
