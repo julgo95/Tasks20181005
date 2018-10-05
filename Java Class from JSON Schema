@@ -1,0 +1,95 @@
+package com.example;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"member",
+"trips"
+})
+public class Example {
+
+/**
+*
+* (Required)
+*
+*/
+@JsonProperty("member")
+private List<Object> member = null;
+/**
+*
+* (Required)
+*
+*/
+@JsonProperty("trips")
+private List<Object> trips = null;
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+*
+* (Required)
+*
+*/
+@JsonProperty("member")
+public List<Object> getMember() {
+return member;
+}
+
+/**
+*
+* (Required)
+*
+*/
+@JsonProperty("member")
+public void setMember(List<Object> member) {
+this.member = member;
+}
+
+/**
+*
+* (Required)
+*
+*/
+@JsonProperty("trips")
+public List<Object> getTrips() {
+return trips;
+}
+
+/**
+*
+* (Required)
+*
+*/
+@JsonProperty("trips")
+public void setTrips(List<Object> trips) {
+this.trips = trips;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+Use this tool offline:
+Maven plugin
+Gradle plugin
+Ant task
+CLI
+Java API
+
+© 2012-2016 Joe Littlejohn Bugs?
