@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "member": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "birthdate",
+            "height",
+            "weight"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "birthdate",
+            "height",
+            "weight"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "birthdate",
+            "height",
+            "weight"
+          ]
+        }
+      ]
+    },
+    "trips": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "transport": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "city",
+            "date",
+            "transport"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "transport": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "city",
+            "date",
+            "transport"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "transport": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "city",
+            "date",
+            "transport"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "member",
+    "trips"
+  ]
+}
